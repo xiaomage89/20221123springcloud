@@ -1,0 +1,103 @@
+jqkaUrl=http://q.10jqka.com.cn/
+pageNumXpath=.//*[@id='m-page']/span
+stockPage=http://q.10jqka.com.cn/index/index/board/all/field/zdf/order/desc/page/
+pageSumRegex=\\d*
+
+stockUrl=http://stockpage.10jqka.com.cn/
+
+
+stockNo=.//*[@id='in_squote']/div/h1/a[1]
+stockName=.//*[@id='in_squote']/div/h1/a[1]/strong
+hexm_curPrice=.//*[@id='hexm_curPrice']
+
+head_stockRealHead=http://stockpage.10jqka.com.cn/realHead_v2.html#hs_
+head_price=.//*[@id='hexm_curPrice']
+head_price_plus_rate=.//*[@id='hexm_float_rate']
+head_plus_value=.//*[@id='hexm_float_price']
+head_open_price=.//*[@id='topenprice']
+head_highest_price=.//*[@id='thighprice']
+head_lowest_price=.//*[@id='tlowprice']
+head_yesterday_price=.//*[@id='pprice']
+head_voluem=.//*[@id='tamount']
+head_turnover=.//*[@id='tamounttotal']
+head_total_market_value=.//*[@id='tvalue']
+head_circulation_market_value=.//*[@id='flowvalue']
+head_amplitude_rate=.//*[@id='trange']
+head_hand_rate=.//*[@id='tchange']
+head_pb_ration=.//*[@id='tvaluep']
+head_pe_ration=.//*[@id='fvaluep']
+
+
+stockMarketIndex=http://stockpage.10jqka.com.cn/realHead_v2.html#
+
+url_GJPlate=http://q.10jqka.com.cn/gn/
+url_DYPlate=http://q.10jqka.com.cn/dy/
+url_THSplate=http://q.10jqka.com.cn/thshy/
+url_ZJHplate=http://q.10jqka.com.cn/zjhhy/
+platePageNumXpath=.//*[@id='m-page']/span
+platePageSumRegex=-?[1-9]\\d*
+regex_stockRegex=detail/code/\\d{6}/
+regex_stockZJHRegex=detail/code/.*/
+
+platePage=http://q.10jqka.com.cn/thshy/index/field/199112/order/desc/page/
+
+
+#东方财富网#
+mian_dongfang = http://www.eastmoney.com/
+#东方财富网 > 行情中心 > 沪深指数 > 深证系列指数#
+index_stock_sz=http://nufm.dfcfw.com/EM_Finance2014NumericApplication/JS.aspx?cb=jQuery1124015532826045245374_1557228508753&type=CT&token=4f1862fc3b5e77c150a2b985b12db0fd&sty=FCOIATC&js=(%7Bdata%3A%5B(x)%5D%2CrecordsFiltered%3A(tot)%7D)&cmd=C.5&st=(ChangePercent)&sr=-1&p=1&ps=3000
+#上证系列指数#
+index_stock_sh=http://nufm.dfcfw.com/EM_Finance2014NumericApplication/JS.aspx?cb=jQuery1124049217959472218853_1557230421702&type=CT&token=4f1862fc3b5e77c150a2b985b12db0fd&sty=FCOIATC&js=(%7Bdata%3A%5B(x)%5D%2CrecordsFiltered%3A(tot)%7D)&cmd=C.1&st=(ChangePercent)&sr=-1&p=1&ps=3000
+#URL参数#
+index_stock_last = &ps=20
+
+#东方财富网  行情中心 页数#
+df_stock_center_page = http://quote.eastmoney.com/center/gridlist.html#hs_a_board
+#东方财富网  个股行情#
+df_stock_center_list = http://nufm.dfcfw.com/EM_Finance2014NumericApplication/JS.aspx?cb=jQuery1124033020939460706533_1553761106177&type=CT&token=4f1862fc3b5e77c150a2b985b12db0fd&sty=FCOIATC&js=(%7Bdata%3A%5B(x)%5D%2CrecordsFiltered%3A(tot)%7D)&cmd=C._A&st=(ChangePercent)&sr=-1&p=1&ps=4000
+df_stock_center_last = &ps=20
+df_pageNumXpath= .//*[@id='main-table_paginate_page']/a[7]
+#东方财富网 板块#
+#概念板块
+df_stock_sector_list_1=http://nufm.dfcfw.com/EM_Finance2014NumericApplication/JS.aspx?cb=jQuery112406366360120035581_1555226284284&type=CT&token=4f1862fc3b5e77c150a2b985b12db0fd&sty=FPGBKI&js=(%7Bdata%3A%5B(x)%5D%2CrecordsFiltered%3A(tot)%7D)&cmd=C._BKGN&st=(ChangePercent)&sr=-1&p=1&ps=3000
+#地域板块
+df_stock_sector_list_2=http://nufm.dfcfw.com/EM_Finance2014NumericApplication/JS.aspx?cb=jQuery112406682468374405517_1555226071774&type=CT&token=4f1862fc3b5e77c150a2b985b12db0fd&sty=FPGBKI&js=(%7Bdata%3A%5B(x)%5D%2CrecordsFiltered%3A(tot)%7D)&cmd=C._BKDY&st=(ChangePercent)&sr=-1&p=1&ps=3000
+#行业板块
+df_stock_sector_list_3=http://nufm.dfcfw.com/EM_Finance2014NumericApplication/JS.aspx?cb=jQuery112406682468374405517_1555226071774&type=CT&token=4f1862fc3b5e77c150a2b985b12db0fd&sty=FPGBKI&js=(%7Bdata%3A%5B(x)%5D%2CrecordsFiltered%3A(tot)%7D)&cmd=C._BKHY&st=(ChangePercent)&sr=-1&p=1&ps=3000
+
+###################个股财务分析#
+df_stock_indiv_last_sz=&reportType=1&endDate=&code=SZ
+df_stock_indiv_last_sh=&reportType=1&endDate=&code=SH
+#主要指标
+df_stock_indiv_sz=http://emweb.securities.eastmoney.com/NewFinanceAnalysis/
+df_stock_indiv_sh=http://f10.eastmoney.com/NewFinanceAnalysis/
+df_stock_indiv_maintarget=MainTargetAjax?type=
+df_stock_indiv_maintarget_last_sz=&code=SZ
+df_stock_indiv_maintarget_last_sh=&code=SH
+#资产负债表
+df_stock_indiv_zcfzb=zcfzbAjax?companyType=4&reportDateType=
+df_stock_indiv_zcfzb_last_sz=&reportType=1&endDate=&code=SZ
+df_stock_indiv_zcfzb_last_sh=&reportType=1&endDate=&code=SH
+#利润表
+df_stock_indiv_lrb=lrbAjax?companyType=4&reportDateType=
+df_stock_indiv_lrb_last_sh=&reportType=2&endDate=&code=SH
+df_stock_indiv_lrb_last_sz=&reportType=2&endDate=&code=SZ
+
+#现金流量表
+df_stock_indiv_xjllb=xjllbAjax?companyType=4&reportDateType=
+df_stock_indiv_xjllb_last_sh=&reportType=2&endDate=&code=SH
+df_stock_indiv_xjllb_last_sz=&reportType=2&endDate=&code=SZ
+
+#百分比表
+df_stock_indiv_bfb_sz=http://f10.eastmoney.com/NewFinanceAnalysis/PercentAjax_Indx?code=SZ
+df_stock_indiv_bfb_sh=http://f10.eastmoney.com/NewFinanceAnalysis/PercentAjax_Indx?code=SH
+
+#利润表百分比表
+df_stock_indiv_lrbfb_sz=PercentAjax?code=SZAAAAAA&ctype=4&type=
+df_stock_indiv_lrbfb_sh=PercentAjax?code=SHAAAAAA&ctype=4&type=
+
+
+
+
+
+

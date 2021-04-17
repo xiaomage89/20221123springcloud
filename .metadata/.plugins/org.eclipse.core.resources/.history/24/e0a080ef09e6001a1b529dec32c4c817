@@ -1,0 +1,76 @@
+package com.lo.col;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.lo.dao.DepartmentDao;
+import com.lo.dao.StaffDao;
+import com.lo.pojo.StaffVo;
+
+@Controller
+public class LogOnHandle {
+
+		@RequestMapping(value="selectStaff" ,method = RequestMethod.GET)
+		public String selectStaff(Map<String ,Object> map){
+			map.put("staff", StaffDao.getStaffVoAll());
+			return "staff";
+			
+		}
+		
+		@RequestMapping(value="insertStaff/{id}" ,method = RequestMethod.GET)
+		public String insertStaff(@PathVariable(value="id")String id,Map<String ,Object> map){
+			HashMap<Integer, String> sex_map = new HashMap<Integer,String>();
+			sex_map.put(0, "男");
+			sex_map.put(1, "女");
+			sex_map.put(2, "傻");
+			map.put("sexmap", sex_map);
+			
+			map.put("departAll", DepartmentDao.getDepartmentAll());
+			
+			StaffVo staffVo = new StaffVo();
+			if(!id.equals("00")){
+				 staffVo = StaffDao.getStaffVoByid(id);
+			}else{
+				staffVo.setName("");
+			}
+			//modelattributes  from同步值添加
+			map.put("command", staffVo);
+			
+			
+			return "insert";
+			
+		}
+
+		@RequestMapping(value = "insert" ,method=RequestMethod.POST)
+		public String staffInsert(StaffVo staffvo){
+			StaffDao.onSave(staffvo);
+			return "redirect:/selectStaff";
+			
+		}
+		
+//		@RequestMapping(value = "update/{id}" ,method=RequestMethod.GET)
+//		public String staffUpdate(@PathVariable(value="id") String id){
+//			System.out.println(id);
+//			return "redirect:/insertStaff/{id}";
+//			
+//		}
+		
+		@RequestMapping(value = "delete/{id}" ,method=RequestMethod.GET)
+		public String staffDelete(@PathVariable(value="id") String id){
+			StaffDao.onDelete(id);
+			System.out.println(id);
+			return "redirect:/selectStaff";
+		}
+		
+		@RequestMapping(value = "delete/{id}" ,method=RequestMethod.DELETE)
+		public String staffDeleteHidden(@PathVariable(value="id") String id){
+			StaffDao.onDelete(id);
+			System.out.println(id);
+			return "redirect:/selectStaff";
+		}
+}

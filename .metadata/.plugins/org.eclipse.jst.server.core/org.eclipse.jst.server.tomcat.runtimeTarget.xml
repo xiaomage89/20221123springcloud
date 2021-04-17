@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<classpath>
+  <source-attachment entry="D:/softwares/apache-tomcat-8.5.49/lib/servlet-api.jar" runtime-id="Apache Tomcat v8.0" source-attachment-path="D:/softwares/apache-tomcat-8.5.49/lib/javax.servlet-api-3.0.1-sources.jar.zip">
+    <attribute name="source_encoding" value="UTF-8"/>
+  </source-attachment>
+</classpath>

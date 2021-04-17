@@ -1,0 +1,11 @@
+package main.com.thread;
+
+import java.util.Random;
+
+public class ThreadStartJoin {
+	
+	public static void main(String[] args){
+		Random random = new Random();
+		
+	}
+}

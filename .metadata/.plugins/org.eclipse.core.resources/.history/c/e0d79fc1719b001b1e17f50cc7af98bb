@@ -1,0 +1,24 @@
+package main.com.thread;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class ThreadStartJoin {
+	
+	public static void main(String[] args){
+		Random random = new Random();
+		List<Integer> arrayList = new ArrayList<>();
+		
+		for (int i = 0; i < 10000; i++) {
+			Thread thread = new Thread(){
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+					arrayList.add(random.nextInt());
+				}
+			};	
+		}
+	}
+}

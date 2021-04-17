@@ -1,0 +1,9 @@
+package main.com.thread;
+
+public class ThreadDemo {
+
+		private void mian() {
+			// TODO Auto-generated method stub
+
+		}
+}

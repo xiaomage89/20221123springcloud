@@ -1,0 +1,47 @@
+package main.com.thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+/**
+ * Ïß³Ì³Ø
+ * @author majj
+ *
+ */
+public class ThreadExecutor {
+
+	
+	public static void main(String[] args) {
+		
+			ExecutorService threadPool = Executors.newFixedThreadPool(10);
+			ExecutorService threadPool2 = Executors.newCachedThreadPool();
+			ExecutorService threadPool3 = Executors.newSingleThreadExecutor();
+			
+			for (int i = 0; i < 100; i++) {
+				threadPool3.execute(new Mytack(i));
+			}
+			
+	}
+	
+}
+	
+	class Mytack implements  Runnable {
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			System.out.println(Thread.currentThread().getName()+ "--"+ i );
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		int i = 0;
+		public Mytack(int i) {
+			this.i=i;
+		}
+		
+}

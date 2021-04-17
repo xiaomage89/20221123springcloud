@@ -1,0 +1,18 @@
+package nc.com.service;
+
+import nc.com.dto.AdminDto;
+
+public class LoginAdminService {
+
+	/**
+	 * 验证代用户登录
+	 * @param dto
+	 * @return
+	 */
+		public boolean checkUser(AdminDto dto){
+			
+			
+			return false;
+			
+		}
+}

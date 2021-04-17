@@ -1,0 +1,24 @@
+package main.com.thread;
+
+public class ThreadDemo extends Thread{
+
+	
+	public static void main(String[] args){
+		//new ThreadDemo("小马哥").run();
+		new ThreadDemo("小马哥").start();
+	}
+	
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println(name+ "你好");
+	}
+	
+	private String name;
+	
+	public ThreadDemo(String name) {
+		// TODO Auto-generated constructor stub
+		this.name=name;
+	}
+}

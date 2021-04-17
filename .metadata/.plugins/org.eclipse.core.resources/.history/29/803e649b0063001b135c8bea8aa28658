@@ -1,0 +1,65 @@
+package servlet;
+
+import java.io.IOException;
+import java.util.Date;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import javaBean.UserBean;
+import service.RegisterService;
+
+@WebServlet(name = "register", urlPatterns={"/register"})
+public class Register extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doPost(req, resp);
+	}
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		UserBean userBean = new UserBean();
+		String user = request.getParameter("user");
+		String birth = request.getParameter("birth");
+		userBean.setUser(user);
+		userBean.setBirth(new Date());
+		RegisterService registerService = new RegisterService();
+		userBean = registerService.validate(userBean);
+		
+		/***************************1*****************************************
+		//转发效果 赋值  type <jsp:useBean id="register" type="javaBean.UserBean" scope="request" />
+		//如果不赋值 class 新建javaBean
+		request.setAttribute("register", userBean);		
+		//转发效果
+		RequestDispatcher dispatcher = request.getRequestDispatcher("registerSuccess.jsp");
+		dispatcher.forward(request, response);
+		
+		//重定向 ---org.apache.jasper.JasperException: javax.servlet.ServletException: java.lang.InstantiationException: bean register not found within scope
+		//response.sendRedirect("registerSuccess.jsp");
+		**/
+		//***************************2*****************************************
+		//转发效果 赋值   registerSuccessNewJavaBean的type为class 不需要request.setAttribute("register", userBean);
+		//request中getParameter直接赋值额
+//		request.setAttribute("register", userBean);
+		//转发效果
+//		RequestDispatcher dispatcher = request.getRequestDispatcher("registerSuccessNewJavaBean.jsp");
+//		dispatcher.forward(request, response);
+		
+		//***************************3*****************************************
+		request.setAttribute("user", userBean.getUser());	
+//		response.sendRedirect("registerSuccessSend.jsp");
+		response.sendRedirect("registerSuccessSend.jsp");
+	}
+
+}

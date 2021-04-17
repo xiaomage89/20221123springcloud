@@ -1,0 +1,14 @@
+package main.com.thread;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
+public class ThreadStartJoin {
+	
+	public static void main(String[] args){
+		Random random = new Random();
+		List<String> arrayList = new ArrayList<String>();
+	}
+}

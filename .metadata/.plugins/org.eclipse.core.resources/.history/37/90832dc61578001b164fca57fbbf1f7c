@@ -1,0 +1,36 @@
+package nc.com.filters;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class LonginAdminFilter implements Filter{
+
+	private static String[] paths;
+	
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chan)
+			throws IOException, ServletException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void init(FilterConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		String initParameter = config.getInitParameter("logo");
+		paths=initParameter==null? null:initParameter.split(";");
+	}
+
+}

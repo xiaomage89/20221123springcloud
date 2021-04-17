@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TestSpringMVCLogOn/WebContent/WEB-INF/jsp/validat.jsp&apos; to &apos;validate.jsp&apos;" description="Rename resource &apos;validat.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/jsp/validat.jsp" name="validate.jsp" stamp="1598878857798" updateReferences="true"/>
+</session>

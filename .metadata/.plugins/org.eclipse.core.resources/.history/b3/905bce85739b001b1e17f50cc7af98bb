@@ -1,0 +1,35 @@
+package main.com.thread;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class ThreadStartJoin {
+	
+	public static void main(String[] args) throws InterruptedException{
+		
+		TestThread();
+		
+	}
+	
+	public static void TestThread() throws InterruptedException{
+		long start = System.currentTimeMillis();
+		Random random = new Random();
+		List<Integer> arrayList = new ArrayList<>();
+		for (int i = 0; i < 10000; i++) {
+			Thread thread = new Thread(){
+				
+				@Override
+				public void run() {
+					// TODO Auto-generated method stub
+					arrayList.add(random.nextInt());
+				}
+			};
+			thread.start();
+			thread.join();//如果不使用 ，等待主线程结束，list条数不足10000
+			System.out.println(thread.getName());
+		}
+		System.out.println("时间：" + (System.currentTimeMillis()-start));
+		System.out.println("条数"+arrayList.size());
+	}
+}

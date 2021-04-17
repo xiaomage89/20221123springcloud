@@ -1,0 +1,15 @@
+package main.com.thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ThreadExecutor {
+
+	
+	public static void main(String[] args) {
+		
+			ExecutorService threadPool = Executors.newFixedThreadPool(10);
+			ExecutorService threadPool2 = Executors.newCachedThreadPool();
+			ExecutorService threadPool3 = Executors.newSingleThreadExecutor();
+	}
+}

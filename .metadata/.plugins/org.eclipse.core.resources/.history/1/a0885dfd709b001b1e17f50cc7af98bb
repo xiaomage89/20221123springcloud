@@ -1,0 +1,8 @@
+package main.com.thread;
+
+public class ThreadStartJoin {
+	
+	public static void main(String[] args){
+		
+	}
+}

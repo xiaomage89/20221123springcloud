@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TestSpringMVCLogOn/WebContent/script&apos; to &apos;scripts&apos;" description="Rename resource &apos;script&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/script" name="scripts" stamp="1598197848544" updateReferences="true"/>
+</session>

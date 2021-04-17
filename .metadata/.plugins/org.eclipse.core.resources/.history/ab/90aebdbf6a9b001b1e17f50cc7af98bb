@@ -1,0 +1,20 @@
+package main.com.thread;
+
+public class ThreadDemo extends Thread{
+
+	
+	public static void main(String[] args){
+		
+	}
+	
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+	
+	public ThreadDemo(String name) {
+		// TODO Auto-generated constructor stub
+	}
+}

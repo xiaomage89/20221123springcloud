@@ -1,0 +1,9 @@
+package main.com.thread;
+
+public class ThreadDemo {
+
+	
+	public static void mian(String[] args){
+		
+	}
+}

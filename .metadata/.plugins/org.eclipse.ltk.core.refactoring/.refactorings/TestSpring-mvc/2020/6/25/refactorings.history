@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.demo.pojo.Schedule&apos; to &apos;School&apos;&#x0D;&#x0A;- Original project: &apos;TestSpring-mvc&apos;&#x0D;&#x0A;- Original element: &apos;com.demo.pojo.Schedule&apos;&#x0D;&#x0A;- Renamed element: &apos;com.demo.pojo.School&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Schedule&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.demo.pojo{Schedule.java[Schedule" matchStrategy="1" name="School" qualified="false" references="true" similarDeclarations="false" stamp="1592652318471" textual="false" version="1.0"/>
+</session>

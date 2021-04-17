@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<br>spring MVC 映射:<br>
+	<a href="hello"> spring MVC 映射：value</a><br>
+	<a href="method">Spring MVC 映射：method</a><br>
+	<a href="params?name=majj&age=12">Spring MVC 映射： params</a><br>
+	<a href="headers">Spring mvn 映射：headers</a><br>
+	<a href="pathvar/ma1">Spring mvn 映射： pathVariable</a><br>
+	
+	<br>REST风格:<br>
+	<a href="methodGet/12"> GET请求： 获取信息</a><br>
+	
+	<form method = "post" action="methodPost">
+		<input type = "submit" value = "Post请求，新建信息">
+	</form><br>
+	
+	<form method = "post" action="methodDelete/ma">
+		<input type = "hidden" method = "post" value = "delete">
+		<input type = "submit" value = "Post请求 delete，删除信息">
+	</form><br>
+	
+	<form action="methodUpdate/ma" method = "post">
+		<input type = "hidden" method = "post" value= "put">
+		<input type = "submit" value = "Post请求 update，删除信息">
+	</form>
+		
+	
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="TestSpring-mvc"/>
+<aop-project name="TestSpringMVCLogOn"/>
+<aop-project name="TestDay-03SpringBoot-swagger"/>
+<aop-project name="TestDay-02SpringBoot"/>
+<aop-project name="TestDay-01SpringBoot"/>
+<aop-project name="stock-web"/>
+</aop-reference-model>

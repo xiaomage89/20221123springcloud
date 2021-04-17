@@ -1,0 +1,30 @@
+<classpath>
+  <container id="TestSpringMVCLogOn!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/workspace/TestSpringMVCLogOn/WebContent/WEB-INF/lib/validation-api-1.1.0.Final.jar">
+      <source-attachment-path>D:/softwares/repo/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/workspace/TestSpringMVCLogOn/WebContent/WEB-INF/lib/spring-core-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/softwares/repo/repository/org/springframework/spring-core/4.3.0.RELEASE/spring-core-4.3.0.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/workspace/TestSpringMVCLogOn/WebContent/WEB-INF/lib/spring-context-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/softwares/repo/repository/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/workspace/TestSpringMVCLogOn/WebContent/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/softwares/repo/repository/org/springframework/spring-webmvc/4.3.0.RELEASE/spring-webmvc-4.3.0.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/workspace/TestSpringMVCLogOn/WebContent/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/softwares/repo/repository/org/springframework/spring-web/4.3.0.RELEASE/spring-web-4.3.0.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="TestSpring-mvc!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/workspace/TestSpring-mvc/WebContent/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/softwares/repo/repository/org/springframework/spring-web/4.3.0.RELEASE/spring-web-4.3.0.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/workspace/TestSpring-mvc/WebContent/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/workspace/TestSpring-mvc/WebContent/WEB-INF/lib/spring-webmvc-4.3.20.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/workspace/TestSpring-mvc/WebContent/WEB-INF/lib/spring-context-4.3.0.RELEASE.jar">
+      <source-attachment-path>D:/workspace/TestSpring-mvc/WebContent/WEB-INF/lib/spring-context-4.3.0.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>
