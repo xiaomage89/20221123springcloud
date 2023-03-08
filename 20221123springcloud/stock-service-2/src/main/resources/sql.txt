@@ -1,0 +1,14 @@
+CREATE DATABASE `testdemo`;
+    USER
+    (
+        id INT(-1) NOT NULL AUTO_INCREMENT,
+        username VARCHAR(50),
+        password VARCHAR(50),
+        name VARCHAR(50),
+        PRIMARY KEY (id)
+    )
+    ENGINE=InnoDB DEFAULT CHARSET=utf8 DEFAULT COLLATE=utf8_general_ci;
+	
+	
+INSERT INTO user (id, username, password, name) VALUES (0, 'zhangsan', '123', '张三');
+INSERT INTO user (id, username, password, name) VALUES (1, 'lisi', '123', '李四');

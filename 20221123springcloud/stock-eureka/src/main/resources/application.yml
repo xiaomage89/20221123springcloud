@@ -1,0 +1,12 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: eureka-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka
+  server:
+    eviction-interval-timer-in-ms: 10000 #Eureka Server需要将失效服务剔除出服务列表， 默认每隔60秒对所有失效的服务进行剔除
+    enable-self-preservation: false # 关闭自我保护模式（缺省为打开）

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="stock-gateway" />
+        <module name="stock-service-1" />
+        <module name="stock-eureka" />
+        <module name="stock-service-2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="stock-client" target="11" />
+      <module name="stock-eureka" target="11" />
+      <module name="stock-gateway" target="11" />
+      <module name="stock-service-1" target="11" />
+      <module name="stock-service-2" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="stock-client" options="-parameters" />
+      <module name="stock-eureka" options="-parameters" />
+      <module name="stock-gateway" options="-parameters" />
+      <module name="stock-service-1" options="-parameters" />
+      <module name="stock-service-2" options="-parameters" />
+    </option>
+  </component>
+</project>
