@@ -1,10 +1,10 @@
-package com.stock;
+package com.macro.mall.tiny;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StockService1ApplicationTests {
+class MallTiny01ApplicationTests {
 
     @Test
     void contextLoads() {
